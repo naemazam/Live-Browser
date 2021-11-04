@@ -1,0 +1,86 @@
+/*header part */
+ 
+ /* nav bar part */
+ .navbar {
+    height: 100%;
+    width: 90%;
+    padding: 20px 5px;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar ul li {
+  color: white;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+}
+
+#navbar ul li a {
+  color: none;
+  text-decoration: none;
+}
+
+/* Hide Nested ul By Default */
+
+#navbar ul li ul {
+  display: none;
+}
+
+#navbar ul li:hover {
+  cursor: pointer;
+  background: var(--primary-color);
+  color: none;
+}
+
+#navbar ul li:hover a {
+  color: none;
+}
+
+/* Nested Dropdown Show */
+
+#navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  margin-top: 1rem;
+}
+
+#navbar ul li:hover ul li {
+  display: block;
+  background: none;
+}
+
+#navbar ul li:hover ul li a {
+  color: white;
+}
+
+#navbar ul li:hover ul li:hover {
+  background: black;
+  color: none;
+}
+
+#navbar ul li:hover ul li span {
+  float: right;
+  color: none;
+  background: var(--primary-color);
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+#navbar ul li:hover ul li:hover span {
+  background: var(--secondary-color);
+}
+
+#navbar ul li:first-child {
+  background-color: var(--primary-color);
+}
+
+#navbar ul li:first-child a {
+  color: #fff;
+}
