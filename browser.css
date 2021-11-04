@@ -1,0 +1,26 @@
+::selection{
+  color: #fff;
+  background: #675AFE;
+}
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  background: none;
+  padding: 5px 5px;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+}
+
+.wrapper .logos{
+  margin-left: 5px;
+}
+.logos img{
+  opacity: 0.3;
+  margin: 0 7px;
+  transition: opacity 0.4s ease;
+}
+.logos img:last-child{
+  margin-right: 0px;
+}
