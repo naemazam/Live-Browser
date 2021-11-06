@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Browser</title>
+    <title>Live Browser - baidu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
-    <link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="cnstyle.css">
+	<link rel="stylesheet" href="cnnavbar.css">
 	<link rel="stylesheet" href="browser.css">
 </head>
 
@@ -16,7 +16,7 @@
     <header>
         <nav id="navbar">
   <ul>
-    <li> Bookmarks
+    <li> 书签栏
       <ul>
         <li><a href="https://vscode.dev/">VS Code</a> <span>secure</span></li>
         <li><a href="https://www.coursera.org/">Coursera</a> <span>secure</span></li>
@@ -57,32 +57,27 @@
 
     </header>
 	<!-- header close -->
-	<center><h2 style="font-size:80px; color:white;">Welcome To Live Browser</h2></center>
+	<center><h2 style="font-size:80px; color:#0eb3c9;">欢迎来到 Live Browser</h2></center>
 	
 	 <!-- Google part  -->
 	 <section class="content-section">
  <div class="content-wrapper">
- <img class="logo-img" src="./images/logo.jpg" alt="google logo">
+ <img class="logo-img" src="./images/baidulogo.png" alt="Baidu logo">
  <div class="search-bar">
- <i class="fas fa-search"></i>
  <!-- Search Box -->
  <input id="search-input" class="search-input" type="text">
-  <i class="fas fa-keyboard"></i>
-  <i class="fas fa-microphone"></i>
-  </div>
-  <div class="search-btns">
-  <button class="google-search-btn">Google Search</button>
-  <button class="lucky-search-btn">I'm Feeling Lucky</button>
+  <i class="fas fa-camera"></i>
+  <i class="fas fa-search"></i>
   </div>
   <div class="language">
-  <p>Search In: <a href="baidu.html">Baidu</a></p>
+  <p>改变语言: <a href="englishbaidu.html">English</a></p>
   </div>
   </div>
  </section>
 	 <!-- end Google part  -->
 	
     <!-- Open bookmark -->
-    <h1 id="show-modal">Add Bookmark</h1>
+    <h1 id="show-modal">添加书签</h1>
     <!-- Bookmarks -->
     <div class="container" id="bookmarks-container"></div>
     <!-- Modal -->
@@ -90,28 +85,28 @@
         <div class="modal">
             <i class="fas fa-times close-icon" id="close-modal"></i>
             <div class="modal-header">
-                <h3>Add Bookmark</h3>
+                <h3>添加书签</h3>
             </div>
             <div class="modal-content">
                 <form id="bookmark-form">
                     <!-- Website Name -->
                     <div class="form-group">
-                        <label for="website-name" class="form-label">Website Name</label>
+                        <label for="website-name" class="form-label">网站名称</label>
                         <input type="text" class="form-input" id="website-name">
                     </div>
                     <!-- Website URL -->
                     <div class="form-group">
-                        <label for="website-url" class="form-label">Website URL</label>
+                        <label for="website-url" class="form-label">网站地址</label>
                         <input type="text" class="form-input" id="website-url">
                     </div>
-                    <button type="submit">Save</button>
+                    <button type="submit">保存</button>
                 </form>
             </div>
         </div>
     </div>
     <!-- Script -->
 <script src="script.js"></script>
-	<script src="search.js"></script>
+	<script src="baidu.js"></script>
 	<script src="browser.js"></script>
 </body>
 </html>
