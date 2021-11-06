@@ -14,6 +14,12 @@
  - Virtual Keyboard
  - Coming soon more .... 
 
+# Search Engine
+- Google
+- baidu
+- bing
+- Pipilika
+
 # Learn More
 [Read Blog](https://dev.to/naemazam/live-browser-make-a-browser-based-browser-26bh)
 
